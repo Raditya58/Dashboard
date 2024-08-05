@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-header {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo i {
+    height: 45px;
+    width: 45px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: aqua;
+}
+
+.nav .togglebtn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+
+nav.togglebtn span {
+    display: block;
+    background-color: aqua;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+
+nav .navlinks {
+    list-style-type: none;
+}
+
+nav .navlinks li {
+    display: inline-block;
+}
+
+nav .navlinks li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.container .hero-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+    right: -55px;
+    bottom:10px;
+}
+
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h5 {
+    color: #000000;
+    position: absolute;
+    top: 185px;
+    left: 282px;
+    font-size: 23px;
+}
+
+.hero-text h5 span {
+    color: black;
+    font-size: 23px;
+}
+
+.hero-text h1 {
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    font-size: 23px;
+}
+
+.hero-text h2 {
+    color: black;
+    position: absolute;
+    bottom: 220px;
+    left: 255px;
+    font-size: 23px;
+}
+
+#activity-buttons {
+    position: absolute; /* Make sure it is positioned relative to its parent */
+    left: 191px; /* Adjust this value as needed to move it to the right */
+    bottom: 90px;
+    margin: 45px 0; /* Keep existing margin if needed */
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    /* Remove any conflicting margin or positioning styles */
+}
+
+#activity-buttons button {
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: rgba(0, 140, 255, 0.904);
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    cursor: pointer;
+}
+
+#activity-buttons button.active {
+    border-color: white;
+}
+
+.material-symbols-outlined {
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 15px;
+}
+
+.hero-text #clock {
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 310px;
+    left: 230px;
+}
+
+.hero-text h4 {
+    color: black;
+    font-size: 3rem;
+    position: absolute;
+    top: 223px;
+    left: 290px;
+    font-size: 15px;
+}
+
+.activity #activitytext{
+    color: #000000;
+    font-size: 30px;
+    position: relative;
+    right: 150%;
+    bottom: 250px;
+}
+#log-list {
+    list-style-type: none;
+    padding: 5;
+    position: absolute;
+    bottom: 38%;
+    left: 53%;
+}
+
+#log-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+}
+
+#log-list li:last-child {
+    border-bottom: none;
+}
+
